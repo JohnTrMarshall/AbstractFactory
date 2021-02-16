@@ -12,9 +12,22 @@ public class Client {
     }
     public void run() {
 
-        button.showButton();
-        panel.showPanel();
-        textBox.showTextBox();
-        System.out.println();
+        if(checkInstance()) {
+
+            button.showButton();
+            panel.showPanel();
+            textBox.showTextBox();
+            System.out.println();
+        }
+        else {
+
+            System.out.println("Maximum instance count exceeded\n");
+        }
+    }
+
+
+    public boolean checkInstance() {
+
+        return (button != null) && (panel != null) && (textBox != null);
     }
 }

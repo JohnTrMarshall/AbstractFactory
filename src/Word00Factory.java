@@ -3,7 +3,7 @@ public class Word00Factory extends WordFactory {
     @Override
     Button createButton() {
 
-        return new Word00Button();
+        return Word00Button.getInstance();
     }
     @Override
     Panel createPanel() {
