@@ -1,0 +1,19 @@
+public class Word00Factory extends WordFactory {
+
+    @Override
+    Button createButton() {
+
+        return new Word00Button();
+    }
+    @Override
+    Panel createPanel() {
+
+       return new Word00Panel();
+    }
+
+    @Override
+    TextBox createTextBox() {
+
+        return new Word00TextBox();
+    }
+}
